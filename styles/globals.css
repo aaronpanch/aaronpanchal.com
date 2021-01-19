@@ -23,22 +23,12 @@ h1 {
   margin: 1rem 0 0.5rem;
 }
 
-.title {
-  margin: 100px 0;
-  text-align: center;
-}
-
-.logo {
-  width: 90%;
-  max-width: 450px;
+p {
+  margin: 0 0 30px 0;
 }
 
 .image {
   display: block;
   max-width: 100%;
   max-height: 100%;
-}
-
-.launch p {
-  margin: 0 0 30px 0;
 }

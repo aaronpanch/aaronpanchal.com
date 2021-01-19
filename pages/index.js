@@ -35,50 +35,57 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.typekit.net/cst6hxf.css" />
       </Head>
 
-      <header class="title">
-        <img
-          className="logo"
-          src="https://d28ghlfa8ayyw9.cloudfront.net/images/full_name_darker.png"
-          alt="Aaron Panchal"
-        />
-      </header>
+      <div className={styles.layout}>
+        <header className={styles.header}>
+          <img
+            className={styles.logo}
+            src="https://d28ghlfa8ayyw9.cloudfront.net/images/full_name_darker.png"
+            alt="Aaron Panchal"
+          />
+        </header>
 
-      <main className={styles.grid}>
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+        <main className={styles.main}>
+          <div>
+            <img
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/na-pali-coast.jpg"
+              alt="Nā Pali Coast"
+              className="image"
+            />
+            <h1>Nature</h1>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              The evolved, natural world: landscapes. The most challenging of
+              photography subjects, but brings you to some of the coolest places
+              on our planet. Vistas from my adventures around the world.
             </p>
-          </a>
-        </div>
-      </main>
+          </div>
+
+          <div>
+            <img
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/sydney-harbor.jpg"
+              alt="Sydney, New South Wales Harbor"
+              className="image"
+            />
+            <h1>Cities</h1>
+            <p>
+              Street photography: the asphalt jungle. Wanderings and
+              observations.
+            </p>
+          </div>
+
+          <div>
+            <img
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/aaron-nashville.jpg"
+              alt="Portrait at Parthenon, Nashville"
+              className="image"
+            />
+            <h1>People</h1>
+            <p>
+              What I would consider the most interesting of subjects. Candids
+              and portraits, all full of personality and many stories to tell.
+            </p>
+          </div>
+        </main>
+      </div>
     </div>
   );
 }
