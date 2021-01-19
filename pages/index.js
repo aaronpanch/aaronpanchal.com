@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Aaron Panchal | Film Photographer</title>
 
@@ -35,11 +35,15 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.typekit.net/cst6hxf.css" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Learn <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header class="title">
+        <img
+          className="logo"
+          src="https://d28ghlfa8ayyw9.cloudfront.net/images/full_name_darker.png"
+          alt="Aaron Panchal"
+        />
+      </header>
 
+      <main className={styles.grid}>
         <p className={styles.description}>
           Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
@@ -75,17 +79,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   );
 }
