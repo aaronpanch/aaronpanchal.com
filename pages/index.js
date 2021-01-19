@@ -32,6 +32,7 @@ export default function Home() {
           name="description"
           content="Aaron Panchal's photography portfolio"
         />
+        <link rel="stylesheet" href="https://use.typekit.net/cst6hxf.css" />
       </Head>
 
       <main className={styles.main}>
