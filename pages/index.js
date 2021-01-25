@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import classNames from "classnames";
 
 import styles from "../styles/Home.module.css";
 
@@ -6,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Aaron Panchal | Film Photographer</title>
+        <title>Aaron Panchal | Film Photography</title>
 
         <link
           rel="apple-touch-icon"
@@ -32,7 +34,6 @@ export default function Home() {
           name="description"
           content="Aaron Panchal's photography portfolio"
         />
-        <link rel="stylesheet" href="https://use.typekit.net/cst6hxf.css" />
       </Head>
 
       <div className={styles.layout}>
@@ -44,45 +45,65 @@ export default function Home() {
           />
         </header>
 
-        <main className={styles.main}>
-          <div>
-            <img
-              src="https://d28ghlfa8ayyw9.cloudfront.net/images/na-pali-coast.jpg"
-              alt="Nā Pali Coast"
-              className="image"
+        <main>
+          <div className={styles.spaced}>
+            <Image
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/courthouse-panorama.jpg"
+              width={2895}
+              height={1192}
             />
-            <h1>Nature</h1>
-            <p>
-              The evolved, natural world: landscapes. The most challenging of
-              photography subjects, but brings you to some of the coolest places
-              on our planet. Vistas from my adventures around the world.
-            </p>
           </div>
 
-          <div>
-            <img
-              src="https://d28ghlfa8ayyw9.cloudfront.net/images/sydney-harbor.jpg"
-              alt="Sydney, New South Wales Harbor"
-              className="image"
-            />
-            <h1>Cities</h1>
-            <p>
-              Street photography: the asphalt jungle. Wanderings and
-              observations.
-            </p>
+          <div className={classNames(styles.grid, styles.grid3)}>
+            <div className={styles.spaced}>
+              <Image
+                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-2.jpg"
+                width={2087}
+                height={2087}
+              />
+            </div>
+
+            <div className={styles.spaced}>
+              <Image
+                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-1.jpg"
+                width={2089}
+                height={2089}
+              />
+            </div>
+
+            <div className={styles.spaced}>
+              <Image
+                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-3.jpg"
+                width={2144}
+                height={2144}
+              />
+            </div>
           </div>
 
-          <div>
-            <img
-              src="https://d28ghlfa8ayyw9.cloudfront.net/images/aaron-nashville.jpg"
-              alt="Portrait at Parthenon, Nashville"
-              className="image"
+          <div className={classNames(styles.grid, styles.grid23)}>
+            <div className={styles.spaced}>
+              <Image
+                src="https://d28ghlfa8ayyw9.cloudfront.net/images/dad.jpg"
+                width={2390}
+                height={1877}
+              />
+            </div>
+
+            <div className={styles.spaced}>
+              <Image
+                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lucy-1.jpg"
+                width={2083}
+                height={2047}
+              />
+            </div>
+          </div>
+
+          <div className={styles.spaced}>
+            <Image
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/pike-place-market.jpg"
+              width={2892}
+              height={1205}
             />
-            <h1>People</h1>
-            <p>
-              What I would consider the most interesting of subjects. Candids
-              and portraits, all full of personality and many stories to tell.
-            </p>
           </div>
         </main>
       </div>

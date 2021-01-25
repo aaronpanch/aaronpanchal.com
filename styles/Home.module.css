@@ -22,18 +22,24 @@
   width: 100%;
 }
 
-.main {
+.grid {
   display: grid;
-  padding: 0 2rem;
 }
 
 @media (min-width: 500px) {
-  .layout {
-    grid-template-rows: [top] 25% [main] auto;
+  .grid {
+    column-gap: 2rem;
   }
 
-  .main {
-    column-gap: 2rem;
+  .grid23 {
+    grid-template-columns: 5fr 4fr;
+  }
+
+  .grid3 {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.spaced {
+  margin-bottom: 2rem;
 }
