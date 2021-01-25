@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-rows: [top] 15% [main] auto;
+  grid-template-rows: [top] 250px [main] auto;
   grid-template-areas:
     "logo"
     "main";
