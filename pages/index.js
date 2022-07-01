@@ -16,7 +16,7 @@ export default function Home() {
           <img
             className={styles.logo}
             src="https://d28ghlfa8ayyw9.cloudfront.net/images/full_name_darker.png"
-            alt="Aaron Panchal"
+            alt="Logo for Aaron Panchal"
           />
         </header>
 
@@ -25,6 +25,7 @@ export default function Home() {
             src="https://d28ghlfa8ayyw9.cloudfront.net/images/courthouse-panorama.jpg"
             width={2895}
             height={1192}
+            alt="Santa Barbara Courthouse Panorama"
           />
 
           <div className={classNames(styles.grid, styles.grid3)}>
@@ -32,18 +33,21 @@ export default function Home() {
               src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-2.jpg"
               width={2087}
               height={2087}
+              alt="Car on Lisbon Streets"
             />
 
             <Image
               src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-1.jpg"
               width={2089}
               height={2089}
+              alt="Lisbon Buildings"
             />
 
             <Image
               src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-3.jpg"
               width={2144}
               height={2144}
+              alt="Lisbon Auto Rickshaw"
             />
           </div>
 
@@ -52,12 +56,14 @@ export default function Home() {
               src="https://d28ghlfa8ayyw9.cloudfront.net/images/dad.jpg"
               width={2390}
               height={1877}
+              alt="My Dad"
             />
 
             <Image
               src="https://d28ghlfa8ayyw9.cloudfront.net/images/lucy-1.jpg"
               width={2083}
               height={2047}
+              alt="Lucy Dog"
             />
           </div>
 
@@ -65,6 +71,7 @@ export default function Home() {
             src="https://d28ghlfa8ayyw9.cloudfront.net/images/pike-place-market.jpg"
             width={2892}
             height={1205}
+            alt="Pike Place Market Panorama"
           />
         </main>
       </div>
