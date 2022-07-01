@@ -24,11 +24,13 @@
 
 .grid {
   display: grid;
+  row-gap: 1rem;
 }
 
 @media (min-width: 500px) {
   .grid {
     column-gap: 2rem;
+    row-gap: 2rem;
   }
 
   .grid23 {
@@ -38,8 +40,4 @@
   .grid3 {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-.spaced {
-  margin-bottom: 2rem;
 }
