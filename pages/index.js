@@ -45,66 +45,52 @@ export default function Home() {
           />
         </header>
 
-        <main>
-          <div className={styles.spaced}>
-            <Image
-              src="https://d28ghlfa8ayyw9.cloudfront.net/images/courthouse-panorama.jpg"
-              width={2895}
-              height={1192}
-            />
-          </div>
+        <main className={styles.grid}>
+          <Image
+            src="https://d28ghlfa8ayyw9.cloudfront.net/images/courthouse-panorama.jpg"
+            width={2895}
+            height={1192}
+          />
 
           <div className={classNames(styles.grid, styles.grid3)}>
-            <div className={styles.spaced}>
-              <Image
-                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-2.jpg"
-                width={2087}
-                height={2087}
-              />
-            </div>
+            <Image
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-2.jpg"
+              width={2087}
+              height={2087}
+            />
 
-            <div className={styles.spaced}>
-              <Image
-                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-1.jpg"
-                width={2089}
-                height={2089}
-              />
-            </div>
+            <Image
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-1.jpg"
+              width={2089}
+              height={2089}
+            />
 
-            <div className={styles.spaced}>
-              <Image
-                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-3.jpg"
-                width={2144}
-                height={2144}
-              />
-            </div>
+            <Image
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/lisbon-3.jpg"
+              width={2144}
+              height={2144}
+            />
           </div>
 
           <div className={classNames(styles.grid, styles.grid23)}>
-            <div className={styles.spaced}>
-              <Image
-                src="https://d28ghlfa8ayyw9.cloudfront.net/images/dad.jpg"
-                width={2390}
-                height={1877}
-              />
-            </div>
-
-            <div className={styles.spaced}>
-              <Image
-                src="https://d28ghlfa8ayyw9.cloudfront.net/images/lucy-1.jpg"
-                width={2083}
-                height={2047}
-              />
-            </div>
-          </div>
-
-          <div className={styles.spaced}>
             <Image
-              src="https://d28ghlfa8ayyw9.cloudfront.net/images/pike-place-market.jpg"
-              width={2892}
-              height={1205}
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/dad.jpg"
+              width={2390}
+              height={1877}
+            />
+
+            <Image
+              src="https://d28ghlfa8ayyw9.cloudfront.net/images/lucy-1.jpg"
+              width={2083}
+              height={2047}
             />
           </div>
+
+          <Image
+            src="https://d28ghlfa8ayyw9.cloudfront.net/images/pike-place-market.jpg"
+            width={2892}
+            height={1205}
+          />
         </main>
       </div>
     </div>
