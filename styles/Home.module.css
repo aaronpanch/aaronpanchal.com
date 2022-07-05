@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-rows: [top] 250px [main] auto;
+  grid-template-rows: [top] 150px [main] auto;
   grid-template-areas:
     "logo"
     "main";
@@ -28,7 +28,17 @@
   grid-auto-rows: min-content;
 }
 
+@media (min-width: 350px) {
+  .layout {
+    grid-template-rows: [top] 200px [main] auto;
+  }
+}
+
 @media (min-width: 500px) {
+  .layout {
+    grid-template-rows: [top] 250px [main] auto;
+  }
+
   .grid {
     column-gap: 2rem;
     row-gap: 2rem;
